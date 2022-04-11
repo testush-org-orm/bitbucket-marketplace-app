@@ -1,5 +1,5 @@
 {
-  "key": "{{appKey}}",
+  "key": "CST-123",
   "name": "Cider Security",
   "description": "Keep your CI/CD pipeline safe",
   "vendor": {
