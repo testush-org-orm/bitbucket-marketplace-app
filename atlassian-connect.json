@@ -1,0 +1,39 @@
+{
+  "key": "{{appKey}}",
+  "name": "Cider Security",
+  "description": "Keep your CI/CD pipeline safe",
+  "vendor": {
+    "name": "Cider Security",
+    "url": "{{localBaseUrl}}"
+  },
+  "baseUrl": "{{localBaseUrl}}",
+  "authentication": {
+    "type": "jwt"
+  },
+  "lifecycle": {
+    "installed": "/installed",
+    "uninstalled": "/uninstalled"
+  },
+  "modules": {
+    "postInstallRedirect": {
+      "key": "redirect",
+      "url": "{{postInstallBaseUrl}}/new-scm-app-installation/bitbucket?uuid={user_uuid}"
+    },
+    "webhooks": [
+      {
+        "event": "*",
+        "url": "/webhook"
+      }
+    ]
+  },
+  "scopes": [
+    "account",
+    "email",
+    "repository",
+    "repository:admin",
+    "issue",
+    "webhook",
+    "pullrequest"
+  ],
+  "contexts": ["account"]
+}
