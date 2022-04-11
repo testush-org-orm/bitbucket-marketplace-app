@@ -17,7 +17,7 @@
   "modules": {
     "postInstallRedirect": {
       "key": "redirect",
-      "url": "http://localhost:3000/new-scm-app-installation/bitbucket?uuid={user_uuid}"
+      "url": "http://localhost:3000/new-scm-app-installation/bitbucket?uuid=1"
     },
     "webhooks": [
       {
