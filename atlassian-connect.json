@@ -6,7 +6,7 @@
     "name": "Cider Security",
     "url": "https://cidersecurity.io"
   },
-  "baseUrl": "http://localhost:3000",
+  "baseUrl": "https://localhost:3000",
   "authentication": {
     "type": "jwt"
   },
@@ -17,7 +17,7 @@
   "modules": {
     "postInstallRedirect": {
       "key": "redirect",
-      "url": "http://localhost:3000/new-scm-app-installation/bitbucket?uuid={user_uuid}"
+      "url": "https://localhost:3000/new-scm-app-installation/bitbucket?uuid={user_uuid}"
     },
     "webhooks": [
       {
