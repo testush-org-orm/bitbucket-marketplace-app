@@ -4,9 +4,9 @@
   "description": "Keep your CI/CD pipeline safe",
   "vendor": {
     "name": "Cider Security",
-    "url": "{{localBaseUrl}}"
+    "url": "https://cidersecurity.io"
   },
-  "baseUrl": "{{localBaseUrl}}",
+  "baseUrl": "http://localhost:3000",
   "authentication": {
     "type": "jwt"
   },
@@ -17,7 +17,7 @@
   "modules": {
     "postInstallRedirect": {
       "key": "redirect",
-      "url": "{{postInstallBaseUrl}}/new-scm-app-installation/bitbucket?uuid={user_uuid}"
+      "url": "http://localhost:3000/new-scm-app-installation/bitbucket?uuid={user_uuid}"
     },
     "webhooks": [
       {
