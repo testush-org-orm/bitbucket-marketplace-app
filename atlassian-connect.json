@@ -1,12 +1,12 @@
 {
-  "key": "CST-123",
+  "key": "{{appKey}}",
   "name": "Cider Security",
   "description": "Keep your CI/CD pipeline safe",
   "vendor": {
     "name": "Cider Security",
-    "url": "https://cidersecurity.io"
+    "url": "{{localBaseUrl}}"
   },
-  "baseUrl": "http://localhost:3000",
+  "baseUrl": "{{localBaseUrl}}",
   "authentication": {
     "type": "jwt"
   },
@@ -17,7 +17,7 @@
   "modules": {
     "postInstallRedirect": {
       "key": "redirect",
-      "url": "http://localhost:3000/new-scm-app-installation/bitbucket?uuid=1"
+      "url": "{{postInstallBaseUrl}}/new-scm-app-installation/bitbucket?uuid={user_uuid}"
     },
     "webhooks": [
       {
