@@ -6,7 +6,7 @@
     "name": "Cider Security",
     "url": "https://cidersecurity.io"
   },
-  "baseUrl": "https://localhost:3000",
+  "baseUrl": "https://6504-77-137-70-3.ngrok.io",
   "authentication": {
     "type": "jwt"
   },
@@ -17,7 +17,7 @@
   "modules": {
     "postInstallRedirect": {
       "key": "redirect",
-      "url": "https://localhost:3000/new-scm-app-installation/bitbucket?uuid={user_uuid}"
+      "url": "https://6504-77-137-70-3.ngrok.io/new-scm-app-installation/bitbucket?uuid={user_uuid}"
     },
     "webhooks": [
       {
