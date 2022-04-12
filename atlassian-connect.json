@@ -1,5 +1,5 @@
 {
-  "key": "CST",
+  "key": "io.cider.system.tests",
   "name": "Cider Security",
   "description": "Keep your CI/CD pipeline safe",
   "vendor": {
